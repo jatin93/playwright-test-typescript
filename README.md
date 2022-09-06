@@ -1,4 +1,4 @@
-# playwright-test-typescript
+# playwright-test-typescript [![Playwright Tests](https://github.com/jatin93/playwright-test-typescript/actions/workflows/playwright.yml/badge.svg)](https://github.com/jatin93/playwright-test-typescript/actions/workflows/playwright.yml)
 
 ## How to install
 
@@ -7,3 +7,4 @@
 ```
 npm init playwright@latest
 ```
+
