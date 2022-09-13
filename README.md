@@ -51,3 +51,10 @@ use: {
   headless: false;
 }
 ```
+
+### How to create a locator property in page classes
+```ts
+protected get signInBtn(): Locator {
+    return this.page.locator('button:has-text("Sign in")');
+  }
+```

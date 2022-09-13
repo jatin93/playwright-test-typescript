@@ -24,7 +24,6 @@ test.describe("Article Tests", () => {
 
     await page.locator("text=Publish Article").click();
 
-    //await page.waitForLoadState();
     await page.waitForResponse((response) =>
       response.url().includes("https://api.realworld.io/api/articles") && response.status() === 200
     );
