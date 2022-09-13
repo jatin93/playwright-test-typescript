@@ -6,6 +6,6 @@ test.describe("Login tests", function () {
     const app = new RealworldApp(page);
     await app.LoginPage.navigateToLoginPage();
     await app.LoginPage.login();
-    await app.LoginPage.isUserLoggedIn();
+    await app.HomePage.isUserLoggedIn();
   });
 });

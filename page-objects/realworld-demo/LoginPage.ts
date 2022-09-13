@@ -1,4 +1,4 @@
-import { expect, Locator, Page } from "@playwright/test";
+import {Locator, Page } from "@playwright/test";
 
 export class LoginPage {
   protected readonly page: Page;
@@ -27,9 +27,5 @@ export class LoginPage {
 
   public async navigateToLoginPage() {
     await this.page.goto("/#/login");
-  }
-
-  public async isUserLoggedIn() {
-    await expect(this.page).toHaveTitle("Home — Conduit");
   }
 }
