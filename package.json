@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {"test:realWorld": "npx playwright test --headed"},
   "keywords": [],
   "author": "",
   "license": "ISC",

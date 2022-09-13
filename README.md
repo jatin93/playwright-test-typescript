@@ -8,3 +8,14 @@
 npm init playwright@latest
 ```
 
+## How to Run tests
+```
+npm run test:realWorld
+```
+
+## How to enable inbuilt reporter
+```
+reporter: [["html", { outputFolder: "test-report" }]],
+```
+
+
