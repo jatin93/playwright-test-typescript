@@ -18,7 +18,7 @@ npm run test:realWorld
 
 ### How to enable inbuilt reporter
 
-```
+```ts
 reporter: [["html", { outputFolder: "test-report" }]],
 ```
 
