@@ -1,4 +1,5 @@
 import {Locator, Page } from "@playwright/test";
+import { UserCredentials } from "../../data-modals/UserCredentials";
 
 export class LoginPage {
   protected readonly page: Page;
@@ -19,9 +20,9 @@ export class LoginPage {
     this.page = page;
   }
 
-  public async login() {
-    await this.userNameInput.fill("gtr@test.com");
-    await this.userPasswordInput.fill("gtr@test.com");
+  public async login(user : UserCredentials) {
+    await this.userNameInput.fill(user.email);
+    await this.userPasswordInput.fill(user.password);
     await this.signInBtn.click();
   }
 
